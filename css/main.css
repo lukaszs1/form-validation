@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    box-sizing: border-box;
+    padding: 1em;
+    font-family: Roboto, SansSerif;
+}
+body * {
+    box-sizing: inherit;
+}
+
+.ccCard {
+    width: 250px;
+    color: #fff;
+    background: darkcyan;
+    padding: 5px;
+    border-radius: 10px;
+}
+input {
+    display: inline-block;
+    width: 230px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+label {
+    display: inline-block;
+    padding:5px 5px 0 5px;
+}
+.err {
+    display: none;
+    color: red;
+}
+input + label {
+    display: none;
+}
+input ~ #email {
+    display: none;
+}
+
+input:checked + label {
+    display: inline-block;
+}
+input:checked ~ #email {
+    display: inline-block;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
