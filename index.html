@@ -21,27 +21,27 @@
         <form action="">
             <fieldset>
                 <label for="ccNo">Card number</label>
-                <input id="ccNo" type="number" data-fieldtype="creditCard" required>
+                <input id="ccNo" type="number" data-fieldtype="creditCard" >
                 <span class="err">Card no is not valid</span>
             </fieldset>
             <fieldset>
                 <label for="exDate">Expiration date</label>
-                <input id="exDate" type="date" data-fieldtype="dateString" required>
+                <input id="exDate" type="text" data-fieldtype="dateString" placeholder="mm/dd/yyyy">
                 <span class="err">Date is not valid</span>
             </fieldset>
             <fieldset>
                 <label for="cvv">CVV No</label>
-                <input id="cvv" type="number" data-fieldtype="cvv" required>
+                <input id="cvv" type="number" data-fieldtype="cvv" >
                 <span class="err">cvv no is not valid</span>
             </fieldset>
             <fieldset>
                 <label for="storeNo">Store card number</label>
                 <input id="storeNo" type="checkbox">
                 <label for="email">Email address</label>
-                <input id="email" type="email" data-fieldtype="email" required>
+                <input id="email" type="email" data-fieldtype="email" >
                 <span class="err">Email is not valid</span>
             </fieldset>
-            <input type="submit" name="submit" value="Submit">
+            <input id="submit" type="submit" name="submit   " value="Submit">
         </form>
     </div>
 </main>

@@ -37,21 +37,19 @@ label {
     display: none;
     color: red;
 }
-input + label {
-    display: none;
-}
-input ~ #email {
+input + label, input ~ #email, input[type=checkbox] ~ .err  {
     display: none;
 }
 
-input:checked + label {
+input:checked + label, input:checked ~ #email, input:checked ~ .err {
     display: inline-block;
 }
-input:checked ~ #email {
-    display: inline-block;
-}
+
 fieldset {
     border: 0;
     padding: 0;
     margin: 0;
+}
+#submit[disabled = disabled] {
+    color: grey;
 }
